@@ -1,0 +1,337 @@
+\section*{Chapter 1 - Using interviews and occupancy models to assess the presence of large carnivores in the Ruaha landscape}
+
+\subsection*{Introduction}
+
+Understanding the ability for carnivores to co-occur and co-exist with humans is important if we are to protect carnivore populations living outside of protected areas \citep{Carter2012,woodroffe2005people,Dickman2011}. Landscape use by predators is also an important factor to consider when trying to understand patterns of carnivore attacks on livestock. While we know that lions, leopards, wild dogs, cheetahs and spotted hyaena all occur in village land around Ruaha National Park \citep{Dickman2008,Abade2014g} there is little information on the spatial and temporal factors that influence their occurrence in village land \citep{Abade2014g}.\\ 
+
+The size of the area to be surveyed, low density of carnivores, secretive nature of some carnivores and high risk of theft of camera traps mean calculating carnivore occupancy from standard ecological survey techniques poses severe logistical problems. Interview-based surveys are an infrequently used technique that can be used to supply data for occupancy analysis. While there are concerns regarding the quality and robustness of the interview based data \citep{Sheil2004}, studies have shown well designed interview based surveys can be a statistically robust and cost effective method for understanding ecological processes\citep{Meijaard2011,Polfus2014a,Gros1996}. Interviews have been used to provide data for multiple species \citep{Karanth2009,Zeller2011} and multiple season \citep{Pillay2011} occupancy analysis.\\
+
+Previous interview based occupancy analysis has either been conducted on a very large spatial scale \citep{Karanth2009}, has sampled large pre-determined areas, i.e. forest reserves or national parks \citep{Pillay2011,Brittain2013,Pillay2014} or has been conducted in societies where interviewees and researchers were easily able to define spatial extents on a map \citep{Taubmann2015,Zeller2011,Petracca2013}. The RCP study site covers a much smaller landscape (~3000km$^2$), is not divided into pre-existing, widely recognised and appropriately sized areas, and the majority of the areas inhabitants are not familiar with drawn maps, providing challenges in the best way to divide the landscape into sampling areas.\\
+
+Working in a similar landscape scale (2556km$^2$) Zeller et al. \citep{Zeller2011} divided their study area into 36km$^2$ grids, each grid being a sampling area. Grids within which individual interviewees had spent a certain amount of time were defined as that interviewees "Area of Knowledge" (AOK) and then for each grid in their AOK they were questioned on species they had detected. Each individual reporting on detections in a grid counted as a survey, and multiple respondent's AOKs being in each grid provided repeat surveys for the calculation of occupancy and detectability probabilities. Difficulty translating grid squares on a map to respondents AOK's makes this method unsuitable for use in the RCP study area.\\
+
+In a country wide survey \citet{Martinez2011} defined 25km$^2$ sampling areas in village hunting land, then six hunters with territories inside the sampling area were interviewed. Hunter's hunting zones were located on a georeferenced map using specific features and areas that were recognisable and identifiable by the interviewees. Respondents only reporting on species found in these zones. Hunters were first asked to report on species presence or absence which was used for occupancy analysis and then for present species they were asked to estimate their abundance, this was used to calculate relative abundances. While this method may work in the RCP landscape georeferencing all the landscape features would be a very time consuming exercise.\\
+
+As the use of interviews in occupancy analysis as a technique is still in its infancy best practice for defining sampling areas has not yet been determined. In the RCP landscape interviewees will mostly be illiterate so using distinctive landscape features to define respondents AOK will be much more appropriate than directly translating a grid square on a map to actual areas on the ground. A simpler method than that used by \citet{Martinez2011} for defining the spatial extents of surveys for respondents is to define a circular area centred on respondents homesteads, for instance a circle of radius 1km. These circles can either then be used as sampling areas in their own right with repeat interviews with each respondent counting as repeat surveys or sampling areas can be defined as grids and interviews with multiple respondents in each grid counting as repeat surveys.\\
+
+The standard occupancy model assumes that only false-negative detections occur and species are never incorrectly identified as being present \citep{mackenzie2006occupancy}, this is however likely to be invalidated at some point when using public knowledge in occupancy models \citep{Pillay2014}. \citet{States2011} outline improvements to the occupancy model that allow for false positive detections. \citet{States2011} describe two different models that can account for false positive detections. The first, the multiple detection state model, is used where a single detection method is used that produces two detection types; certain (which only contains false negative detections) and uncertain (which may contain false positives). The second model, the multiple detection method model, is used where multiple detection methods were used and each has different probabilities of producing false positives. \citep{Pillay2014} used the multiple detection model to show that allowing for false positive detections can improve occupancy estimates when using interviews.
+
+\subsection*{Methods}
+\subsubsection*{Study Area}
+The study site lies to the south west of Ruaha National Park, Tanzania, and consists of the community land associated with 11 villages in the Iringa region (figure \ref{fig:area_map}). The area is part of the Ruaha-Rungwa ecosystem, a collection of national parks, wildlife managed areas, game reserves and village land that encompasses over 45,000km\textsuperscript{2}. This landscape contains outstanding biodiversity and is considered a globally valuable biological ecoregion \citep{Olson1998}. The Ruaha-Rungwa ecosystem holds impressive populations of large mammals, over 3000 lions, representing 10\% of the world's population \citep{Riggio2013}, the world's third largest population of African wild dog \citep{IUCN2007}, one of four east african cheetah populations over 200 individuals \citep{IUCN2007} and globally important leopard and spotted hyena populations. The importance of these populations of threatened carnivores means the Ruaha-Rungwa ecosystem is considered a priority for African carnivore conservation \citep{Mills2001}.\\
+
+\begin{figure}[htb]
+\centering
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{0.5pt}
+\fbox{\includegraphics{A_Area_Map}}
+\caption{Map showing the community land to the south-east of Ruaha National Park where the study was conducted.}
+\label{fig:area_map}
+\end{figure}
+
+The climate in the region is semi-arid to arid with average rainfall of 500mm \citep{Dickman2008} and temperature ranging from 15-35\textsuperscript{o}C \citep{Darch1999}. Ruaha National Park is unique in being the only protected area that covers the transition between the East African Acacia-Commiphora zone to the southern African Brachystegia zone \citep{Douglas-Hamilton1982,Williams1999}. Land use in village land around the park is a mixture of woodland, grassland, rangeland and cultivated land.\\
+
+Ruaha National Park forms the core of the Ruaha-Rungwa ecosystem, however much of the village land surrounding the park forms important habitat for large carnivores and potentially provides valuable connectivity with other protected areas \citep{Dickman2005,Abade2014h}. The communities living around the park are ethnically diverse coming from at least 35 different ethnic groups \citep{Williams2005}. For many people livelihood strategies are tied strongly to cultural and tribal identities \citep{Williams2005,Dickman2008} with a number of these ethnic group's livelihoods relying heavily on livestock herding \citep{Dickman2008}.\\
+
+There is intense human-carnivore conflict between the park's large carnivores and pastoralists living on the parks edge \citep{Dickman2008}. Carnivore attacks on livestock are relatively common, with an attack occurring on average at least once every 2.5 days in 11 villages (RCP unpublished data). Compared to other sources of livestock mortality (such as disease) carnivore attacks are responsible for relatively few livestock deaths \citep{Dickman2014d}, however when carnivore attacks do occur they trigger strong negative responses and often lethal retaliation \citep{Abade2014g,Dickman2008}. 
+
+\subsubsection*{Occupancy Interviews and Area of Knowledge Mapping}
+
+Interviews with local livestock herders were used to produce detection histories to use in occupancy models. Interviewees were selected from members of the household who spend significant amounts of time in the bush herding livestock as these will be the members of the household with the most information on the presence and absence of carnivores. Following \citet{Zeller2011} prior to being included in the study interviewees went through a two step verification process, in the first step they were asked to describe the different carnivore species, their spoors and their vocalisations, in the second step they were asked to identify carnivores, prey species and a variety of spoor from pictures, only respondents with a suitable level of wildlife knowledge were selected for interviewing.\\
+
+To use interviews as surveys for occupancy models it is important to spatially define the area over which respondents report animal detection. Following \citep{Zeller2011} we call the area that a respondent reports wildlife detections their Area Of Knowledge (AOK). We used two AOKs, these were circles centred on the respondents household with radii of one and two kilometres. To define these AOKs a GPS unit was used to find a landmark that was recognisable and memorable to the respondent (i.e. a large tree, other household, farm, river, road etc.) that was between 900 and 1100 metres from the respondents homestead, the 1km landmark, while at the 1km landmark respondents were asked to describe another landmark the same distance again away from the homestead, the 2km landmark. Returning to the homestead the respondent was then asked to describe other landscape features that were the same distances away from their homestead as the 1km landmark in different directions these were recorded on a map (figure \ref{fig:AOK_map}) and the process repeated for the 2km landmark. Where possible distance estimates were cross checked by measuring their distance to the homestead with a GPS unit.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=10cm]{A_AOK_mapping}
+\caption{Map drawn with respondent showing the 1km landmarks that define the spatial extent of their 1km AOK. The landmarks recorded (starting at the top going clockwise) are a specific tree, the path to Isanga, a football pitch and Petro Mahungaji's farm.}
+\label{fig:AOK_map}
+\end{figure}
+
+Respondents were then asked to report which species they detected in their 1km AOK over the last 30 days, and for species detected if the detection was tracks, vocalisations and/or direct sightings. Respondents were asked to estimate the abundance of detected species using the PLEO method; "e.g. whether there were more or less than 100 elephants in the sample area; if less, whether there were more or less than 50, and so on. In the end, the estimate would be 'about 15', or 'between 25 and 50'" \citep{VanderHoeven2004}. With the process repeated for their 2km AOK\\
+
+Households were re-visited every two months over a 14 month period to ensure a full seasonal cycle was covered. Where possible the same household member was interviewed, if they were not available and another household member was they were replaced as long as the new respondent knew where the landmarks were and passed the wildlife test. On repeat visits households were visited at least twice to try and find a respondent, if after two visits nobody suitable could be found for interviewing that household was removed from that months list and the reason for non-availability was recorded.\\
+
+\subsubsection*{Household selection}
+
+An existing RCP database of all livestock owning households in the area was used to select households for inclusion in this study. In pilot studies respondents from agriculturalist tribes tended to have very poor wildlife knowledge and due to farming commitments were very hard to find to interview, as a result pastoralist households were picked in preference to agriculturalist households.\\
+
+Splitting the study site into 6x6km grids produced 35 36km$^2$ squares containing at least one pastoralist household (figure \ref{fig:HH_selection}) and 28 grid squares containing at least 5 households, the number of households that covers the optimum repeat survey effort for all the large carnivores apart from leopard, whose low detection probability requires logistically impossible numbers of repeat surveys (table \ref{table:OptimumRepeats}). Where possible 7 households per grid square were picked to be interviewed to provide a two household buffer to allow for households that could not be interviewed every month.\\
+
+\begin{figure}[h]
+\centering
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{0.5pt}
+\fbox{\includegraphics{A_HH_selectionPDF}}
+\caption{Map showing the households selected for inclusion in the study, those excluded and the density of these households in each 6x6km grid square.}
+\label{fig:HH_selection}
+\end{figure}
+
+\begin{table}[h]
+	\small
+	\begin{center}
+		\begin{tabular}{l p{3cm} p{3cm} p{5cm}}
+			\hline \hline		
+			Species 			& Occupancy probability	 	& Detection probability & Optimum number of surveys to conduct at each site for a standard design \citep{Mackenzie2005b}\\ \hline
+			Lion 			& 0.40						& 0.50 & 3\\
+			Leopard 			& 0.70						& 0.20 & 11\\
+			Spotted Hyena 	& 0.70						& 0.90 & 2\\
+			Cheetah 			& 0.25						& 0.30 & 5\\
+			Wild Dog 		& 0.25						& 0.40 & 4\\
+			\hline \hline						
+		\end{tabular}
+		\caption{Optimum number of surveys required at each site from Mackenzie et al. \citep{Mackenzie2005b}. Occupancy and detection probabilities were based on the expert opinion of RCP staff.}
+	\label{table:OptimumRepeats}
+	\end{center}
+\end{table}
+
+A high percentage of households initially selected for interviewing could not be interviewed, this was because the household had moved since the RCP data was collected, the owner had passed away, the household no longer had livestock, the household did not want to be part of the study or there was no suitable household members to be interviewed. In this case if a nearby household was available this was used to replace the initial household. These replacements decisions were made in the field and consideration of replacement households positions in specific grid squares was not possible.
+
+\subsubsection*{Occupancy Models}
+For use in occupancy models each interview was designated as a survey and the grid squares within which households were placed defined as a sampling unit. Our methods violate a number of the assumptions of the occupancy model, firstly the closure assumption is violated as it is highly likely that carnivores will be moving between village land and Ruaha National Park during survey seasons. Relaxing this assumption changes the interpretation of occupancy parameter from "proportion of area occupied" to "proportion of area used" \citep{MacKenzie2004} as we are ultimately interested in understanding areas where livestock are at risk of attack calculating area usage is sufficient. Secondly independence of detection histories at each location will be violated in some areas as some AOK's will overlap, however the lack of suitably sized and widely recognised geographic boundaries meant using AOK's defined as buffers around households was the only suitable way of defining the spatial extents of surveys.\\
+
+Single species single season occupancy models were created for each carnivore species with the two initial interview rounds combined into one season. Covariate inclusion in models was based on a-priori hypothesis with models compared using AIC values \citep{Burnham2002}. Models were run using the unmarked package \citep{Fiske2011} in R \citep{RCoreTeam2015}.\\
+
+\subsubsection*{Environmental Covariates}
+Table \ref{table:env_covariates} shows the environmental covariates considered for inclusion as occupancy covariates in occupancy models. Covariates were converted to rasters where appropriate using raster package \citep{Hijmans2014} in programme R \citep{RCoreTeam2015} and average pixel values for each sampling unit were calculated. Covariates were compared in a correlation matrix and strongly correlated variables (|r|>0.7) were removed from analysis \citep{Dormann2013}.
+
+\begin{table}[h]
+	\small
+	\begin{center}
+		\begin{tabular}{l p{3cm} p{7cm}}
+			\hline \hline		
+			Environmental Covariate			& Resolution	 				& Source\\ \hline
+			Cation Exchange Capacity			& 1km						& www.isric.org\\
+			Digital Elevation Model			& 1 arc second ~30m			& STRM\\
+			Slope							& 1 arc second ~30m			& Calculated from DEM\\
+			Distance to Roads				& 100m						& Open Street Map \& RCP data\\
+			Distance to Rivers				& 100m						& Hydrosheds\\
+			Distance to Ruaha National Park	& 100m						& TANAPA\\
+			Distance to Protected Area$\dagger$		& 100m						& TANAPA\\
+			Population Density				& 3 arc second ~100m			& Afripop\\
+			Annual average precipitation		& 30 arc second ~1km			& WorldClim\\
+			Non-tree vegetation cover		& 250m						& MODIS\\			
+			Tree cover						& 250m						& MODIS\\			
+			Bare ground cover				& 250m						& MODIS\\			
+			\hline \hline						
+		\end{tabular}
+		\caption{Environmental covariates considered for use in occupancy models. Further environmental co-variates will be considered in models such as average annual EVI, EVI for the month of the surveys and rainfall at different temporal resolutions, these have not been included in initial analysis due to delays in accessing the relevant remote sensing products. $\dagger$ distance to protected area is effectively distance to a Wildlife Management Area as this runs along the borders of the national park through the whole study area.}
+	\label{table:env_covariates}
+	\end{center}
+\end{table}
+
+\subsubsection*{Detection Covariates}
+
+Detection co-variates will be included in future models, these will include environmental covariates such as vegetation cover and respondent covariates such as the respondents age, tribe, length of time based in the area. These have not been included in this initial analysis as I have not had the time for the lengthy task of organising and matching respondent co-variates between survey rounds.
+
+\subsection*{Results}
+
+\subsubsection*{Interviews}
+The first two rounds of interviews were conducted in May-June and July-August 2016. A sample list if 175 households was created. Of the 190 households originally selected to be interviewed 89 had either moved or were not suitable for interviewing, most were replaced with a nearby household apart from 15, for whom no suitable household could be found, leaving a sample of 175 households. 173 households were successfully interviewed in the first round and 131 in the second. The two households not interviewed in the first round were because no suitable respondents were available after 2 attempts to visit. Of the 44 households not interviewed in the second round 22 of these were because the household had moved to dry season pasture and so the homestead was temporarily unoccupied, 18 homesteads had nobody suitable to be interviewed after 2 visits and 4 homesteads had been permanently abandoned.
+
+\subsubsection*{Defining sampling units}
+High levels of household replacement means the original 6x6km gridding was not considered relevant. Optimal grid placement was explored by laying a 6x6km grid across the survey landscape. The grid was then moved horizontally, vertically and diagonally in 100m increments. The grid placement that produced a mean of 5.24 households per grid with a standard deviation of 2.28 had the lowest standard deviation and was considered the optimal grid placement with the most even household distribution between grid squares (figure \ref{fig:6km_grid_place}).
+
+\begin{figure}[h]
+\centering
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{0.5pt}
+\fbox{\includegraphics[width=8cm]{6km_placement_postPDF}}
+\caption{Map showing the optimal placement of a 6x6km grid to allow the most even distribution of households across sampling units ($\bar{x}$ = 5.24, $sigma$ = 2.18.}
+\label{fig:6km_grid_place}
+\end{figure}
+ 
+%(table \ref{table:grid_place}).
+%\begin{table}[htb]
+%	\small
+%	\begin{center}
+%		\begin{tabular}{l l l}
+%			\hline \hline		
+%			Grid Size	& Mean 	& Standard Deviation \\ \hline
+%			5x5km 		& 3.93	& 2.05	\\	
+%			6x6km		& 5.24	& 2.28	\\
+%			7x7km		& 6.65	& 2.38	\\
+%			\hline \hline						
+%		\end{tabular}
+%		\caption{Mean and standard deviation of households per grid square in the optimally placed grids}
+%	\label{table:grid_place}
+%	\end{center}
+%\end{table}
+
+\subsubsection*{Defining AOKs}
+Distances from 65 landmarks to the respondents homestead were measured to check the accuracy of respondents distance estimates. For both distances there is tendency to overestimate and variation in estimates was quite high, with the mean real distance for 1km landmarks 1.29 km ($n$=21, $\sigma$=0.303) and for 2km landmarks 2.17km ($n$=44, $\sigma$=0.494).
+
+\subsubsection*{Species detections}
+
+All five large carnivore species were detected in both rounds of interviews along with a wide array of prey species (table \ref{table:species_detections}). Hyena's were the most reported large carnivore followed by lion, leopard, wild dog and finally cheetah. Detection rates of all species were lower in round 2 (table \ref{table:species_detections}).
+
+\begin{table}[h]
+	\small
+	\begin{center}
+		\begin{tabular}{l l l l l}
+			\hline \hline		
+			Species	& Round 1, 1km 	& Round 1, 2km 	& Round 2, 1km 	& Round 2, 2km \\ \hline
+			Lion		& 24.9			&	37.6			&	11.5			& 16.0\\	
+			Leopard	& 16.2			&	23.1			&	9.2			& 14.5\\
+			Hyena	& 93.6			&	97.1			&	87.8			& 87.08\\
+			Cheetah	& 7.5			&	8.7			&	0.8			& 0.8\\
+			Wild dog	& 11.6			&	13.9			&	0.8			& 0.8\\	
+			Jackal\textdagger	& -				&	-			&	42.7			& 42.7\\	
+			Kudu		&83.8			&	87.9			&	82.4			& 84.7\\	
+			Eland	&5.8				&	6.9			&	3.8			& 3.8\\	
+			Waterbuck&2.3			&	2.9			&	0.8			& 0.8\\	
+			Zebra	&5.2				&	5.8			&	0.8			& 1.5\\	
+			Buffalo	&1.2				&	1.7			&	0			& 0.8\\	
+			Impala	&53.8			&	61.3			&35.9			& 35.9\\	
+			Duicker	&60.7			&	60.7			&33.6			& 41.2\\	
+			Dik Dik	&93.1			&	93.1			&87.8			& 90.8\\	
+			Bushbuck	&41.0			&	42.2			&15.3			& 15.3\\	
+			Hogs	\textdaggerdbl	&61.3			&	69.4			&24.4			& 27.5\\	
+			Monkeys	&95.4			&	97.1			&95.4			& 95.4\\
+			Baboons	&52.0			&	61.3			&35.9			& 42.7\\	
+			Giraffe\textdagger	&-				&	-			&	3			& 3.8\\	
+			Elephant\textdagger&-				& 	-			&38.9			& 41.2\\					
+			\hline \hline						
+		\end{tabular}
+		\caption{Percentage of respondents reporting each species by interview round and size of AOK. \textdagger Jackal, giraffe and elephant were omitted from the first round. \textdaggerdbl Bushpig and warthog were combined into one response as they are very difficult to differentiate by their tracks}
+	\label{table:species_detections}
+	\end{center}
+\end{table}
+
+\subsubsection*{Abundance estimates}
+Abundance estimates using the PLEO method were unsuccessful with respondents frequently reporting unrealistically high numbers of animals living around their homesteads (e.g. 500 baboons living within 1km of the homestead). Thus abundance estimates were ignored and purely presence/absence detection data used.
+
+\subsubsection*{Environmental Covariates}
+
+Collinearity between environmental covariates was explored using a correlation matrix, variables with a strong correlation (R$^2$ > 0.7) were removed. Bare ground cover, tree cover, precipitation, cation exchange capacity, slope and distance to protected area were all correlated to other variables and were removed.
+
+\subsubsection*{Occupancy Models}
+Preliminary analysis of data collected in the first two rounds has been conducted, currently just on detections within 1km AOKs. The very different occupancy and detection rates between the two rounds (table \ref{table:species_detections} and table \ref{table:fixed_models}) suggest strong seasonal changes in occupancy and detectability and so the two rounds were analysed separately and not combined into a single-season model. For each species 8 models were constructed, a null model, a model with all 6 occupancy co-variates and a model for each occupancy co-variate separately. Following \citet{Burnham2002} only models with a $\Delta$AIC less than 4 are considered. (table \ref{table:Occu_models}). Covariate estimates of the models with the lowest AIC value were calculated (table \ref{table:best_occu_models})
+
+\begin{table}[h]
+	\small
+	\begin{center}
+		\begin{tabular}{l l l l l}
+			\hline \hline		
+	Species	& Round 	&Naive Occupancy	&Occupancy Estimate &Detectability Estimate	\\ \hline
+	Lion		& 1		&	0.606		&0.698 (SE 0.0989)	& 0.364 (SE 0.0511)	\\	
+			& 2		&	0.276		&0.447 (SE 0.158)	& 0.226 (SE 0.0702)	\\	
+	Leopard	& 1		&	0.515		&0.758 (SE 0.150)	& 0.214 (SE 0.0498) \\	
+			& 2		&	0.310		&0.567 (SE 0.225)	& 0.167 (SE 0.0757)	\\	
+	Cheetah	& 1		&	0.237		&0.432 (SE 0.135)	& 0.126 (SE 0.0437) 	\\	
+			& 2		&	0.0345		&0.125 (SE0.730)		& 0.0703 (SE 0.479)	\\	
+	Hyena	& 1		&	1.00			&1.00 (SE 46.7E-5)	& 0.936 (SE0.0186)	\\	
+			& 2		&	0.900		&1.00 (SE 10.5E-4) 	& 0.878 (SE 0.0286)	\\	
+	Wild Dog	& 1		&	0.333		&0.414 (SE 0.108)	& 0.295 (SE 0.0701)	\\	
+			& 2		&	0.0303		&0.0411 (SE 0.0459)	& 0.373 (SE 0.490)	\\	
+			\hline \hline						
+		\end{tabular}
+		\caption{Table of naive occupancy; and back transformed occupancy, and detectability estimates from the fixed models for the five species of large carnivore. These models assume constant occupancy and detectability, and do not incorporate any co-variates.}
+	\label{table:fixed_models}
+	\end{center}
+\end{table}
+
+\begin{table}[!h]
+	\small
+	\begin{center}
+		\begin{tabular}{l l l l l}
+			\hline \hline		
+	Species	& Round 	& Model						&$\Delta$AIC 	&R$^2$\\ \hline		
+	Lion		& 1		&$P(\cdot)\Psi(R)$			& 	0.00		&0.196\\	
+			& 		&$P(\cdot)\Psi(R+W+E+C+H+V)$	&	1.62		&0.377\\	
+			& 2		&$P(\cdot)\Psi(R+W+E+C+H+V)$	& 	0.00		&0.488\\	
+			& 		&$P(\cdot)\Psi(R)$			&	0.76		&0.250\\	
+			& 		&$P(\cdot)\Psi(E)$			&	1.63		&0.227\\	
+			& 		&$P(\cdot)\Psi(W)$			&	2.69		&0.198\\				
+	Leopard	& 1		&$P(\cdot)\Psi(\cdot)$		& 	0.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(E)$			&	0.94		&0.0317\\	
+			& 		&$P(\cdot)\Psi(H)$			& 	1.64		&0.0107\\	
+			& 		&$P(\cdot)\Psi(W)$			&	1.83		&0.00512\\	
+			& 		&$P(\cdot)\Psi(V)$			&	1.89		&0.00333\\	
+			& 		&$P(\cdot)\Psi(C)$			&	1.97		&0.00098\\				
+			& 		&$P(\cdot)\Psi(R)$			&	1.97		&0.00090\\							
+			& 2 		&$P(\cdot)\Psi(R+W+E+C+H+V)$	& 	0.00		&0.490\\					
+	Cheetah	& 1		&$P(\cdot)\Psi(E)$			& 	0.00		&0.31\\	
+			& 		&$P(\cdot)\Psi(V)$			&	1.56		&0.27\\	
+			& 2		&$P(\cdot)\Psi(R)$			& 	0.00		&0.564\\	
+			& 		&$P(\cdot)\Psi(W)$			&	3.39		&0.263\\	
+			& 		&$P(\cdot)\Psi(H)$			&	3.39		&0.262\\			
+	Hyena	& 1		&$P(\cdot)\Psi(\cdot)$		& 	0.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(E)$			&	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(C)$			& 	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(W)$			&	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(R)$			&	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(H)$			&	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(V)$			&	2.00		&0.000\\	
+			& 2		&$P(\cdot)\Psi(\cdot)$		& 	0.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(E)$			&	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(C)$			& 	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(H)$			&	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(W)$			&	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(R)$			&	2.00		&0.000\\	
+			& 		&$P(\cdot)\Psi(V)$			&	2.00		&0.000\\	
+	Wild Dog& 1		&$P(\cdot)\Psi(V)$			& 	0.00		&0.156\\	
+			& 		&$P(\cdot)\Psi(E)$			&	1.96		&0.104\\	
+			& 		&$P(\cdot)\Psi(R)$			& 	3.44		&0.0619\\	
+			& 		&$P(\cdot)\Psi(\cdot)$		&	3.52		&0.000\\	
+			& 		&$P(\cdot)\Psi(c)$			&	3.65		&0.0560\\	
+			& 2		&$P(\cdot)\Psi(C)$			& 	0.00		&0.418\\	
+			& 		&$P(\cdot)\Psi(\cdot)$		&	2.22		&0.000\\	
+			& 		&$P(\cdot)\Psi(V)$			& 	3.35		&0.0906\\	
+			\hline \hline						
+		\end{tabular}
+		\caption{Table of occupancy models, key to covariates: R - Distance to Ruaha National Park, W - Distance to river, E - Elevation, C - Distance to road, H - Human population density, V - Non-tree vegetation cover.}
+	\label{table:Occu_models}
+	\end{center}
+\end{table}
+
+\begin{table}[!h]
+	\small
+	\begin{center}
+		\begin{tabular}{l l l l l l}
+			\hline \hline		
+	Species	& Round 	& Model						&Covariate 	&Estimate	& SE\\ \hline		
+	Lion		& 1		&$P(\cdot)\Psi(R)$			& Intercept	&-0.85		&0.492	\\	
+			& 		&							&R			&-1.25		&0.558	\\	
+			& 		&							&Detection	&-0.85		&0.165	\\	
+			& 2		&$P(\cdot)\Psi(R+W+E+C+H+V)$	& Intercept	&-32.0		&38.3	\\	
+			& 		&							&V			&27.1		&33.5	\\	
+			& 		&							&E			&17.0		&27.0	\\	
+			& 		&							&H			&-54.8		&64.0	\\				
+			& 		&							&W			&-75.0		&85.0	\\							
+			& 		&							&C			&-13.9		&35.8	\\							
+			& 		&							&R			&-39.0		&44.9	\\							
+			& 		&							&Detection	&-1.16		&0.296	\\				
+	Leopard	& 1		&$P(\cdot)\Psi(\cdot)$		&Intercept	&1.19		&0.657\\	
+			& 		&							&Detection	&-1.58		&0.211	\\		
+			& 2 		&$P(\cdot)\Psi(R+W+E+C+H+V)$	&Intercept	&-13.2		&45.4\\					
+			&  		&							&V  			&64.4		&115.2\\	
+			&  		&							&E 			&-51.3		&93.6\\	
+			&  		&							&H 			&62.6		&108.9\\	
+			&  		&							&W 			&44.7		&80.8\\	
+			&  		&							&C 			&-11.7		&58.6\\	
+			&  		&							&R 			&-23.2		&43.5\\	
+			& 		&							&Detection	&-1.39		&0.323 \\				
+
+	Cheetah	& 1		&$P(\cdot)\Psi(E)$			& Intercept	&-0.796		&0.672\\	
+			& 		&							&E			&-2.45		&1.02\\	
+			& 		&							&Detection	&-1.81		&0.336	\\				
+			& 2		&$P(\cdot)\Psi(R)$			& Intercept	&-114		&513\\	
+			& 		&							&R			&-70			&315\\	
+			& 		&							&Detection	&-1.61		&1.1	\\				
+	Hyena	& 1		&$P(\cdot)\Psi(\cdot)$		& Intercept	&15.8		&467\\	
+			& 		&							&Detection	&2.33		&0.202	\\		
+			& 2		&$P(\cdot)\Psi(\cdot)$		& Intercept	&10.6		&41.7\\	
+			& 		&							&Detection	&1.97		&0.267\\				
+	Wild Dog& 1		&$P(\cdot)\Psi(V)$			& Intercept	&-0.409		&0.478\\	
+			& 		&							& V			&-1.047		&0.549\\	
+			& 		&							&Detection	&-1.40		&0.283\\				
+			& 2		&$P(\cdot)\Psi(C)$			& Intercept	&-71.2		&220\\	
+			& 		&							& C			&71.4		&220	\\	
+			& 		&							&Detection	&-2.			&1.05	\\				
+			\hline \hline						
+		\end{tabular}
+		\caption{Table of best fitting occupancy models and covariate estimates (table \ref{table:Occu_models}), key to covariates: R - Distance to Ruaha National Park, W - Distance to river, E - Elevation, C - Distance to road, H - Human population density, V - Non-tree vegetation cover.}
+	\label{table:best_occu_models}
+	\end{center}
+\end{table}
