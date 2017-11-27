@@ -1,4 +1,4 @@
-\section*{Introduction}
+\section{Introduction}
 
 Understanding the ability for carnivores to co-occur and co-exist with humans is important if we are to protect carnivore populations living outside of protected areas \cite{Carter2012,woodroffe2005people,Dickman2011}. Landscape use by predators is also an important factor to consider when trying to understand patterns of carnivore attacks on livestock. While we know that lions, leopards, wild dogs, cheetahs and spotted hyaena all occur in village land around Ruaha National Park \cite{Dickman2008,Abade2014g} there is little information on the spatial and temporal factors that influence their occurrence in village land \cite{Abade2014g}.\\ 
 
@@ -14,8 +14,8 @@ As the use of interviews in occupancy analysis as a technique is still in its in
 
 The standard occupancy model assumes that only false-negative detections occur and species are never incorrectly identified as being present \cite{mackenzie2006occupancy}, this is however likely to be invalidated at some point when using public knowledge in occupancy models \cite{Pillay2014}. \citet{States2011} outline improvements to the occupancy model that allow for false positive detections. \citet{States2011} describe two different models that can account for false positive detections. The first, the multiple detection state model, is used where a single detection method is used that produces two detection types; certain (which only contains false negative detections) and uncertain (which may contain false positives). The second model, the multiple detection method model, is used where multiple detection methods were used and each has different probabilities of producing false positives. \cite{Pillay2014} used the multiple detection model to show that allowing for false positive detections can improve occupancy estimates when using interviews.
 
-\section*{Methods}
-\subsection*{Study Area}
+\section{Methods}
+\subsection{Study Area}
 The study site lies to the south west of Ruaha National Park, Tanzania, and consists of the community land associated with 11 villages in the Iringa region (figure \ref{fig:area_map}). The area is part of the Ruaha-Rungwa ecosystem, a collection of national parks, wildlife managed areas, game reserves and village land that encompasses over 45,000km\textsuperscript{2}. This landscape contains outstanding biodiversity and is considered a globally valuable biological ecoregion \cite{Olson1998}. The Ruaha-Rungwa ecosystem holds impressive populations of large mammals, over 3000 lions, representing 10\% of the world's population \cite{Riggio2013}, the world's third largest population of African wild dog \cite{IUCN2007}, one of four east african cheetah populations over 200 individuals \cite{IUCN2007} and globally important leopard and spotted hyena populations. The importance of these populations of threatened carnivores means the Ruaha-Rungwa ecosystem is considered a priority for African carnivore conservation \cite{Mills2001}.\\
 
 \begin{figure}[htb]
@@ -33,7 +33,7 @@ Ruaha National Park forms the core of the Ruaha-Rungwa ecosystem, however much o
 
 There is intense human-carnivore conflict between the park's large carnivores and pastoralists living on the parks edge \cite{Dickman2008}. Carnivore attacks on livestock are relatively common, with an attack occurring on average at least once every 2.5 days in 11 villages (RCP unpublished data). Compared to other sources of livestock mortality (such as disease) carnivore attacks are responsible for relatively few livestock deaths \cite{Dickman2014d}, however when carnivore attacks do occur they trigger strong negative responses and often lethal retaliation \cite{Abade2014g,Dickman2008}. 
 
-\subsection*{Occupancy Interviews and Area of Knowledge Mapping}
+\subsection{Occupancy Interviews and Area of Knowledge Mapping}
 
 Interviews with local livestock herders were used to produce detection histories to use in occupancy models. Interviewees were selected from members of the household who spend significant amounts of time in the bush herding livestock as these will be the members of the household with the most information on the presence and absence of carnivores. Following \citet{Zeller2011} prior to being included in the study interviewees went through a two step verification process, in the first step they were asked to describe the different carnivore species, their spoors and their vocalisations, in the second step they were asked to identify carnivores, prey species and a variety of spoor from pictures, only respondents with a suitable level of wildlife knowledge were selected for interviewing.\\
 
@@ -50,7 +50,7 @@ Respondents were then asked to report which species they detected in their 1km A
 
 Households were re-visited every two months over a 14 month period to ensure a full seasonal cycle was covered. Where possible the same household member was interviewed, if they were not available and another household member was they were replaced as long as the new respondent knew where the landmarks were and passed the wildlife test. On repeat visits households were visited at least twice to try and find a respondent, if after two visits nobody suitable could be found for interviewing that household was removed from that months list and the reason for non-availability was recorded.\\
 
-\subsection*{Household selection}
+\subsection{Household selection}
 
 An existing RCP database of all livestock owning households in the area was used to select households for inclusion in this study. In pilot studies respondents from agriculturalist tribes tended to have very poor wildlife knowledge and due to farming commitments were very hard to find to interview, as a result pastoralist households were picked in preference to agriculturalist households.\\
 
@@ -88,7 +88,7 @@ A high percentage of households initially selected for interviewing could not be
 
 \section{Analysis}
 
-\subsection*{Defining sampling units}
+\subsection{Defining sampling units}
 High levels of household replacement means the original 6x6km gridding was not considered relevant. Optimal grid placement was explored by laying a 5x5, 6x6 and 7x7km grids across the survey landscape. The grids were then moved horizontally, vertically and diagonally in 100m increments and the average and standard deviation of numbers of households in each grid examined. The optimal grid placement was that which ensured as many grids as possible meet the optimum number of households (Table \ref{table:OptimumRepeats}) and so had a mean above and as close to 5 as possible and low variance. 
 
 \subseciton
@@ -123,12 +123,12 @@ that produced a mean of 5.24 households per grid with a standard deviation of 2.
 
 
 
-\subsubsection*{Occupancy Models}
+\subsubsection{Occupancy Models}
 For use in occupancy models each interview was designated as a survey and the grid squares within which households were placed defined as a sampling unit. Our methods violate a number of the assumptions of the occupancy model, firstly the closure assumption is violated as it is highly likely that carnivores will be moving between village land and Ruaha National Park during survey seasons. Relaxing this assumption changes the interpretation of occupancy parameter from "proportion of area occupied" to "proportion of area used" \cite{MacKenzie2004} as we are ultimately interested in understanding areas where livestock are at risk of attack calculating area usage is sufficient. Secondly independence of detection histories at each location will be violated in some areas as some AOK's will overlap, however the lack of suitably sized and widely recognised geographic boundaries meant using AOK's defined as buffers around households was the only suitable way of defining the spatial extents of surveys.\\
 
 Single species single season occupancy models were created for each carnivore species with the two initial interview rounds combined into one season. Covariate inclusion in models was based on a-priori hypothesis with models compared using AIC values \cite{Burnham2002}. Models were run using the unmarked package \cite{Fiske2011} in R \cite{RCoreTeam2015}.\\
 
-\subsubsection*{Environmental Covariates}
+\subsubsection{Environmental Covariates}
 Table \ref{table:env_covariates} shows the environmental covariates considered for inclusion as occupancy covariates in occupancy models. Covariates were converted to rasters where appropriate using raster package \cite{Hijmans2014} in programme R \cite{RCoreTeam2015} and average pixel values for each sampling unit were calculated. Covariates were compared in a correlation matrix and strongly correlated variables (|r|>0.7) were removed from analysis \cite{Dormann2013}.
 
 \begin{table}[h]
@@ -170,21 +170,21 @@ Table \ref{table:env_covariates} shows the environmental covariates considered f
 	\end{center}
 \end{table}
 
-\subsection*{Detection Covariates}
+\subsection{Detection Covariates}
 
 Detection co-variates will be included in future models, these will include environmental covariates such as vegetation cover and respondent covariates such as the respondents age, tribe, length of time based in the area. These have not been included in this initial analysis as I have not had the time for the lengthy task of organising and matching respondent co-variates between survey rounds.
 
-\section*{Results}
+\section{Results}
 
-\subsection*{Interviews}
+\subsection{Interviews}
 The first two rounds of interviews were conducted in May-June and July-August 2016. A sample list if 175 households was created. Of the 190 households originally selected to be interviewed 89 had either moved or were not suitable for interviewing, most were replaced with a nearby household apart from 15, for whom no suitable household could be found, leaving a sample of 175 households. 173 households were successfully interviewed in the first round and 131 in the second. The two households not interviewed in the first round were because no suitable respondents were available after 2 attempts to visit. Of the 44 households not interviewed in the second round 22 of these were because the household had moved to dry season pasture and so the homestead was temporarily unoccupied, 18 homesteads had nobody suitable to be interviewed after 2 visits and 4 homesteads had been permanently abandoned.
 
 
 
-\subsection*{Defining AOKs}
+\subsection{Defining AOKs}
 Distances from 65 landmarks to the respondents homestead were measured to check the accuracy of respondents distance estimates. For both distances there is tendency to overestimate and variation in estimates was quite high, with the mean real distance for 1km landmarks 1.29 km ($n$=21, $\sigma$=0.303) and for 2km landmarks 2.17km ($n$=44, $\sigma$=0.494).
 
-\subsection*{Species detections}
+\subsection{Species detections}
 
 All five large carnivore species were detected in both rounds of interviews along with a wide array of prey species (table \ref{table:species_detections}). Hyena's were the most reported large carnivore followed by lion, leopard, wild dog and finally cheetah. Detection rates of all species were lower in round 2 (table \ref{table:species_detections}).
 
@@ -221,14 +221,14 @@ All five large carnivore species were detected in both rounds of interviews alon
 	\end{center}
 \end{table}
 
-\subsection*{Abundance estimates}
+\subsection{Abundance estimates}
 Abundance estimates using the PLEO method were unsuccessful with respondents frequently reporting unrealistically high numbers of animals living around their homesteads (e.g. 500 baboons living within 1km of the homestead). Thus abundance estimates were ignored and purely presence/absence detection data used.
 
-\subsection*{Environmental Covariates}
+\subsection{Environmental Covariates}
 
 Collinearity between environmental covariates was explored using a correlation matrix, variables with a strong correlation (R$^2$ > 0.7) were removed. Bare ground cover, tree cover, precipitation, cation exchange capacity, slope and distance to protected area were all correlated to other variables and were removed.
 
-\subsection*{Occupancy Models}
+\subsection{Occupancy Models}
 Preliminary analysis of data collected in the first two rounds has been conducted, currently just on detections within 1km AOKs. The very different occupancy and detection rates between the two rounds (table \ref{table:species_detections} and table \ref{table:fixed_models}) suggest strong seasonal changes in occupancy and detectability and so the two rounds were analysed separately and not combined into a single-season model. For each species 8 models were constructed, a null model, a model with all 6 occupancy co-variates and a model for each occupancy co-variate separately. Following \citet{Burnham2002} only models with a $\Delta$AIC less than 4 are considered. (table \ref{table:Occu_models}). Covariate estimates of the models with the lowest AIC value were calculated (table \ref{table:best_occu_models})
 
 \begin{table}[h]
