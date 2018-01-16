@@ -99,7 +99,9 @@ For use in occupancy models each interview was designated as a survey and the gr
 Single species single season occupancy models were created for each carnivore species with the two initial interview rounds combined into one season. Covariate inclusion in models was based on a-priori hypothesis with models compared using AIC values \cite{burnham2002}. Models were run using the unmarked package \cite{Fiske2011} in R \cite{RCoreTeam2015}.\\
 
 \subsubsection{Environmental Covariates}
-Table \ref{table:env_covariates} shows the environmental covariates considered for inclusion as occupancy covariates in occupancy models. Covariates were converted to rasters where appropriate using raster package \cite{Hijmans2014} in programme R \cite{RCoreTeam2015} and average pixel values for each sampling unit were calculated. Covariates were compared in a correlation matrix and strongly correlated variables (|r|>0.7) were removed from analysis \cite{Dormann2013}.
+Table \ref{table:env_covariates} shows the environmental covariates considered for inclusion as occupancy covariates in occupancy models. Covariates were converted to rasters where appropriate using raster package \begin{quote}
+\cite{Hijmans2014}
+\end{quote} in programme R \cite{RCoreTeam2015} and average pixel values for each sampling unit were calculated. Covariates were compared in a correlation matrix and strongly correlated variables (|r|>0.7) were removed from analysis \cite{Dormann2013}.
 
 \begin{table}[h]
 	\small
